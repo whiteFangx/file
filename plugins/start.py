@@ -101,9 +101,8 @@ async def start_command(client: Client, message: Message):
                 mention = message.from_user.mention,
                 id = message.from_user.id
             ),
-            reply_markup = reply_markup,
-            disable_web_page_preview = True,parse_mode=PARSEMODE.HTML
-            quote = True
+            reply_markup = InlineKeyboardMarkup(buttons), quote = True, disable_web_page_preview = True,
+parse_mode=Parsemode.HTML
         )
         return
 
